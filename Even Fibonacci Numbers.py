@@ -3,15 +3,15 @@ def fibonacciNums(n):
         return [0]
     sequence = [0, 1]
     while sequence[-1] + sequence[-2] <= n:
-        nextNum = sequence[-1] +sequence[-2]
+        nextNum = sequence[-1] + sequence[-2]
         sequence.append(nextNum)
 
     sequence = list(filter(lambda x: x % 2 == 0, sequence))
     summedSeqeunce = sum(sequence)
     return summedSeqeunce
 
-print(fibonacciNums(4000000))
 
+print(fibonacciNums(4000000))
 
 
 a, b = 0, 1
